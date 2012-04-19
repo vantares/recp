@@ -1,0 +1,38 @@
+.pagination {
+   font-size: 12px;
+}
+        
+.pagination a {
+    text-decoration: underline;
+	color: gray;
+}
+
+.pagination a:hover {
+    text-decoration: underline;
+	color:#38AAEC;
+}
+
+.pagination .pxofy{
+	float:left;
+	margin-right: 15px;
+	margin-bottom: 5px;
+	color: white;
+	padding-top:4px;
+}	
+
+.pagination a, .pagination span {
+    display: block;
+    float: left;
+    padding:4px 2px;
+    margin-right: 5px;
+	margin-bottom: 5px;
+}
+
+.pagination .current {
+    color:#38AAEC;
+	font-size:13px;
+}
+
+.pagination .current.prev, .pagination .current.next{
+	color:#484848;
+}
