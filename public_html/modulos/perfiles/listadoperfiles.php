@@ -9,6 +9,7 @@ if($usuario->checkCredenciales(array('Administracion', 'Definir Perfiles'))) {
    $perfiles = new perfil();                                                     
    //Elimino el perfil 
    if((isset($_GET['idperfil'])&&($_GET['idperfil'] !=''))){
+   //if((isset($_GET['idperfil'])){
         $perfiles->deleteRecord($_GET['idperfil']);
    }
    

@@ -34,7 +34,10 @@ $(document).ready(function() {
            {section name=perfil loop=$arrayPerfiles}
             <div class="filadatos">
                 <div class="filadatosli primerafila" style="width:555px">{$arrayPerfiles[perfil].nombre}</div> 
-                <div class="filadatosli noborde" style="width:149px; text-align:center" ><a href='/modulos/perfiles/editperfil.php?accion=edit&idperfil={$arrayPerfiles[perfil].idperfil}'><img src="/imagenes/iconedit.png" alt="Editar Perfil" title="Editar Perfil" width="18" height="18" /></a>&nbsp;&nbsp;&nbsp;<a class="class2" href="{'/modulos/perfiles/'|cat:$arrayPerfiles[perfil].idperfil}"><img src="/imagenes/iconcancelar1.png" alt="Eliminar Perfil" title="Eliminar Perfil" width="18" height="18" /></a></div>
+                <div class="filadatosli noborde" style="width:149px; text-align:center" >
+			<a href='/modulos/perfiles/editperfil.php?accion=edit&idperfil={$arrayPerfiles[perfil].idperfil}'>
+			 <img src="/imagenes/iconedit.png" alt="Editar Perfil" title="Editar Perfil" width="18" height="18" /></a>&nbsp;&nbsp;&nbsp;
+                      	 <a class="class2" href="{'/modulos/perfiles/__deleteperfil.php'|cat:'/'|cat:$arrayPerfiles[perfil].idperfil}"><img src="/imagenes/iconcancelar1.png" alt="delete" title="delete" width="18" height="18" /></a>
                 <div class="limpiar"></div>
             </div><!--filadatos-->
           {/section}
